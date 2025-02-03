@@ -1,0 +1,30 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+}
+
+footer p{
+    color: #f00;
+}
+
+
+#firstol {
+    color: orangered;
+}
+
+
+.blue{
+    color: blue;
+}
+
+.bigger{
+    font-size: larger;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.italic{
+    font-style: italic;
+}
