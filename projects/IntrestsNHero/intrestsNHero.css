@@ -1,16 +1,16 @@
 body{
     font-size:large;
     font-family: 'Courier New', Courier, monospace;
-    color:darkgreen;
-    background-color:snow;
+    color:#587C16;
+    background-color:#e4f5c5;
 }
 
 h1{
-    color: black;
+    color:#7b4d91;
 }
 
 h2{
-    color: black;
+    color:#7b4d91;
 }
 
 .underline{
@@ -18,10 +18,14 @@ h2{
 }
 
 #copyright{
-    color: crimson;
+    color: #C4A9D0;
     font-size: medium;
 }
 
-.quotecolor{
-    color:darkmagenta;
+.red{
+    color: crimson;
 } 
+
+.grey{
+    color:#7DA438;
+}
