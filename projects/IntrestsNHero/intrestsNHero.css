@@ -1,0 +1,18 @@
+body{
+    font-size:large;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:snow;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#copyright{
+    color: crimson;
+    font-size: medium;
+}
+
+.quotecolor{
+    color:darkmagenta;
+} 
