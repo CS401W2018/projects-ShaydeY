@@ -1,7 +1,16 @@
 body{
     font-size:large;
     font-family: 'Courier New', Courier, monospace;
+    color:darkgreen;
     background-color:snow;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color: black;
 }
 
 .underline{
