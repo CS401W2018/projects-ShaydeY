@@ -13,3 +13,8 @@ header{
     background-position: right;
    /*background: url(xmaskirby.png) top right no-repeat;*/
 }
+
+.anyList{
+    /*list-style-image: url(image here);*/
+    list-style-type: armenian;
+}
