@@ -1,0 +1,15 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: antiquewhite;
+    background: url(angelwings.jpg) black;
+    /*background-image: url(angelwings.jpg);
+    backgorund-color: black*/
+}
+
+
+header{
+    background-image: url(xmaskirby.png);
+    background-repeat: no-repeat;
+    background-position: right;
+   /*background: url(xmaskirby.png) top right no-repeat;*/
+}
