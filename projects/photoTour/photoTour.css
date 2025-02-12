@@ -12,3 +12,12 @@ ul{
 .fishpoints{
     list-style-image: url(friedrice.png);
 }
+
+.current{
+    color:blueviolet;
+    font-style:italic
+}
+
+nav a{
+    color: blue;
+}
