@@ -1,0 +1,25 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: lightcoral;
+    padding: 10px 20px;
+    margin: 20px;
+    width: 85%;
+}
+
+header h1{
+    border: 6px dotted black;
+    text-align: center;
+    line-height: 3.5;
+    font-weight:lighter;
+    background-color: lightcyan;
+    background-clip: padding-box;
+}
+
+.fish{
+    border: 0.5px solid black;
+    margin-left: auto;
+    width: 100px;
+}
