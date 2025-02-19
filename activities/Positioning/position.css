@@ -1,0 +1,35 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border {
+    border-width: 100%;
+    border: thick solid black;
+    box-shadow: 3px 3px 3px 3px rgb(0,0,0,0.5);
+}
+
+.border img{
+    width: 100%;
+}
+
+.floatimg{
+    float:left;
+}
+
+.clear{
+    clear: both
+}
+
+.movimg {
+    position: absolute;
+    top: 300px;
+    right: 50px;
+}
+
+nav a{
+    background-color: coral;
+    display: block;
+    padding: 10px 5px;
+    border-bottom: 3px solid white;
+    float: left;
+}
