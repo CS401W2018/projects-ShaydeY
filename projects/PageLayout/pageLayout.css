@@ -11,7 +11,6 @@ body header{
     text-transform: uppercase;
     text-shadow: 3px 3px 2px lightcoral;
     padding-top: 1%;
-    padding-left: 5%;
     text-align: center;
 
 }
@@ -26,11 +25,13 @@ a{
     background-color: rgb(244, 185, 185);
     display: block;
     padding: 10px 5px;
+    display: inline;
     
 }
 
 body p{
     padding-right: 5%;
+    padding-top: 3%;
 }
 
 a:hover{
@@ -40,6 +41,7 @@ a:hover{
 footer img{
     background-origin:border-box;
     background-clip: content-box;
+    position: static;
 }
 
 #wrapper{
@@ -82,4 +84,8 @@ footer img{
 
 .clear{
     clear: both;
+}
+
+.padleft{
+    padding-left: 10px;
 }
