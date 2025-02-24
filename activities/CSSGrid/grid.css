@@ -1,0 +1,15 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.parent{
+    background-color:chartreuse;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr;
+    gap: 5px;
+}
+
+.child {
+    background-color: crimson;
+}
