@@ -1,8 +1,58 @@
+header {
+    background-color: lightblue;
+
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav {
+    display: flex;
+    justify-content:  space-evenly;
+    
+}
+
 nav a {
     display: block;
-    
+    background-color: lightpink;
+    padding: 3px 10px;
+}
+
+.asideMain {
+    display: flex;
+}
+
+.asideMain aside {
+    width:80%;
+}
+
+.asideMain main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.profileCards {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px gray;
+    margin: 1%;
+    width: 30%;
+}
+
+.profileCards img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.linkGrid {
+    display: grid;
+}
+
+.linkGrid a {
+    grid-template-columns: 5fr;
+    grid-template-rows: 4fr;
 }
