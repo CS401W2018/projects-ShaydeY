@@ -10,6 +10,7 @@ body {
 nav {
     display: flex;
     justify-content:  space-evenly;
+    margin-bottom: 3%;
     
 }
 
@@ -25,6 +26,7 @@ nav a {
 
 .asideMain aside {
     width:80%;
+    margin-right: 3%;
 }
 
 .asideMain main {
@@ -50,9 +52,9 @@ nav a {
 
 .linkGrid {
     display: grid;
-}
+    background-color: lightgrey;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 3%;
 
-.linkGrid a {
-    grid-template-columns: 5fr;
-    grid-template-rows: 4fr;
 }
