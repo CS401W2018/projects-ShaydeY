@@ -1,0 +1,36 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: lightgoldenrodyellow;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: none;
+}
+
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40, 0.5);
+    width: 300px;
+    margin: 10px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.frame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,49 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgoldenrodyellow;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightsteelblue;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: lightpink;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: aliceblue;
+}
+
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40, 0.5);
+    width: 300px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.frame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
