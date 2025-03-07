@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+}
+
+.sideMain{
+    display: flex;
+}
+
+.sideMain aside{
+    width: 30%;
+}
+
+.card{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgb(40, 40, 40, 0.5);
+    width: 300px;
+}
+
+.card p{
+    padding-left: 10px;
+}
+
+.card h2 {
+    padding-left: 10px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.frame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
