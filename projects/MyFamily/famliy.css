@@ -5,10 +5,18 @@ body {
 nav {
     display: flex;
     justify-content: space-evenly;
+    background-color: lightpink;
 }
 
 nav a{
     display: block;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: lightcyan;
 }
 
 .sideMain{
@@ -16,7 +24,7 @@ nav a{
 }
 
 .sideMain aside{
-    width: 30%;
+    width: 20%;
 }
 
 .card{
@@ -45,4 +53,29 @@ nav a{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+@media ONlY screen and (max-width: 600px){
+    nav {
+        flex-direction:column;
+        gap: 3px;
+    }
+
+    nav a{
+        border-bottom: thin solid white;
+    }
+
+    .sideMain {
+        flex-direction: column;
+        
+    }
+
+    .sideMain aside {
+        order: 100;
+        align-self: center;
+        width: 100%;
+    }
 }
