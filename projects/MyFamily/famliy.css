@@ -27,10 +27,18 @@ nav a:hover {
     width: 20%;
 }
 
+.sideMain img {
+    width: 100%;
+}
+
 .card{
     border: thin solid black;
     box-shadow: 3px 3px 3px rgb(40, 40, 40, 0.5);
     width: 300px;
+}
+
+.card{
+    padding: 5px;
 }
 
 .card p{
