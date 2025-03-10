@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <header>
+        <h1>Web Design: Tables</h1>
+    </header>
+    <main>
+        <h1></h1>
+        <h2>When do you use a table?</h2>
+        <p>To orginize information on a page</p>
+        <h2>When do you not use a table?</h2>
+        <p>To format your page. Google will not like it.</p>
+        <h2>When do you need to do extra work for table accessibility?</h2>
+        <p>Create Theaders, TBody, and TFooter, to allow more specific readabliity. Also assigning cells to a specific thing.</p>
+
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="4">Winter 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td rowspan="2">140</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>MAtd</td>
+                    <td>SCB 304</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>REL</td>
+                    <td>200</td>
+                    <td>STC 2B</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>SSA</td>
+                    <td>175</td>
+                    <td>GYM</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Spring 2025</th>
+                </tr>
+                <tr>
+                    <td>REL</td>
+                    <td>300</td>
+                    <td>STC 4B</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>SSA</td>
+                    <td>123</td>
+                    <td>GYM</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th id="Total Credits" colspan="3">Total Credits</th>
+                    <td header="Total Credits">13</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Shayde Yamagata</p>
+    </footer>
+</body>
+</html>
