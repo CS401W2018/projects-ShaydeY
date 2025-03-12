@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.schedule {
+    /*border: 2px solid black;*/
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.5);
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+    width: 500px;
+}
+
+
+.schedule th, .schedule td {
+    /*border: thin solid black;*/
+    padding: 3px 5px 3px 5px;
+    vertical-align: middle;
+}
+
+.schedule thead{
+    background-color: rgb(167, 231, 231);
+}
+
+.schedule tfoot{
+    background-color: rgb(167, 231, 231);
+}
+
+.schedule tbody:nth-child(odd){
+    background-color: gray;
+}
