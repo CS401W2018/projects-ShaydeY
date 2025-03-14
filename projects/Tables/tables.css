@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:rgb(255, 255, 241);
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    padding-bottom: 1%;
+    border-bottom: solid thin black;
+}
+
+nav a{
+    display: block;
+    border: solid thin black;
+    padding: 1%;
+    background-color: rgb(206, 227, 246);
+}
+
+aside {
+    background-color: rgb(206, 227, 246);
+    padding-left: 7px;
+}
+
+.schedule {
+    /*border: 2px solid black;*/
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.5);
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+
+.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 3px 5px 3px 5px;
+    vertical-align: middle;
+    border-bottom: solid thin black;
+}
+
+.schedule thead{
+    background-color: rgb(206, 227, 246);
+}
+
+.schedule tfoot{
+    background-color: rgb(206, 227, 246);
+}
+
+.schedule tbody tr:nth-child(odd){
+    background-color: gray;
+    
+}
+
+.sideMain{
+    display: flex;
+    gap: 5%;
+}
+
+.sideMain aside{
+    order: 1000;
+    /*temp border*/
+    border: solid thin black;
+    
+}
+
+#WhiteSpace {
+    color: rgb(206, 227, 246);
+}
