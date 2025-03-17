@@ -13,13 +13,32 @@
     <main>
         <form action="processing.html" method="get">
             <div class="form-row">
-                First Name: <input type="text" name="firstname" placeholder="First Name" required>
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" placeholder="First Name" id="fullname" required>
             </div>
             <div class="form-row">
-                Email: <input type="email" name="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
             </div>
             <div>
-                Password: <input type="password" name="password" id="pass">
+                <label for="pass">Password:</label>
+                <input type="password" name="password" id="pass">
+            </div>
+            <div>
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div>
+                <div>Year in School:</div>
+                <label><input type="radio" name="year" id="year" value="freshman"> Freshman</label>
+                <label><input type="radio" name="year" id="year" value="sophomore"> Sophomore</label>
+                <label><input type="radio" name="year" id="year" value="junior"> Junior</label>
+                <label><input type="radio" name="year" id="year" value="senior"> Senior</label>
             </div>
             <div class="form-row">
                 <input type="submit">
