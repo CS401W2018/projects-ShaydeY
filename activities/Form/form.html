@@ -12,37 +12,56 @@
     </head>
     <main>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="fullname">Full Name:</label>
-                <input type="text" name="fullname" placeholder="First Name" id="fullname" required>
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <div>Year in School:</div>
-                <label><input type="radio" name="year" id="year" value="freshman"> Freshman</label>
-                <label><input type="radio" name="year" id="year" value="sophomore"> Sophomore</label>
-                <label><input type="radio" name="year" id="year" value="junior"> Junior</label>
-                <label><input type="radio" name="year" id="year" value="senior"> Senior</label>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="First Name" id="fullname" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+
+                <div class="radial-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" id="year" value="freshman"> Freshman</label>
+                    <label><input type="radio" name="year" id="year" value="sophomore"> Sophomore</label>
+                    <label><input type="radio" name="year" id="year" value="junior"> Junior</label>
+                    <label><input type="radio" name="year" id="year" value="senior"> Senior</label>
+                </div>
+
+                <div class="radial-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember Me</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
 
         <h2>QnA:</h2>
@@ -52,6 +71,10 @@
         <p>There are 2 options; Post and Get. Determines how the data is stored and travels.</p>
         <h3>What is the difference between a "POST" and a "GET"?</h3>
         <p>In a "GET" request the data travels as part of the URL; for reading information. In a "POST" request the data will change your state; does not disply in URL.</p>
+        <h3>What are different ways to style your form?</h3>
+        <p>Float, CSS Grid, and CSS Flex</p>
+        <h3>Why does the professor like to use flex?</h3>
+        <p>Because Flex works with responsive pages</p>
 
     </main>
     <footer>
