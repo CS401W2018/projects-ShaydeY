@@ -21,6 +21,11 @@ legend {
     background-color: white;
 }
 
+.form-row input[type= "submit"]{
+    padding: 10px;
+    background-color: rgb(182, 181, 181);
+}
+
 .form-row{
     display: flex;
     gap: 10px;
