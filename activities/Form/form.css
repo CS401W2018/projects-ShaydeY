@@ -2,6 +2,25 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+fieldset {
+    background-color: aliceblue;
+}
+
+legend {
+    background-color: rgb(179, 179, 245);
+    padding: 10px;
+}
+
+.form-row input:not([type= "submit"]) {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(182, 181, 181);
+}
+
+.form-row input:not([type= "submit"]):focus {
+    background-color: white;
+}
+
 .form-row{
     display: flex;
     gap: 10px;
