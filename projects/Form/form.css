@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -11,17 +11,24 @@ header {
 
 fieldset {
     background-color: rgb(249, 240, 255);
+    
 }
 
 legend {
     background-color: rgb(179, 245, 214);
     padding: 10px;
+    border: solid thin gray;
 }
 
 .form-row input:not([type= "submit"]) {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(182, 181, 181);
+    background-color: rgb(216, 216, 216);
+    width: 40%;
+}
+
+.form-row input:is([type = "date"]){
+    width: auto;
 }
 
 .form-row input:not([type= "submit"]):focus {
@@ -30,7 +37,7 @@ legend {
 
 .form-row input[type= "submit"]{
     padding: 10px;
-    background-color: rgb(182, 181, 181);
+    background-color: rgb(216, 216, 216);
 }
 
 .form-row{
@@ -38,6 +45,7 @@ legend {
     gap: 10px;
     margin: 10px 0;
 }
+
 
 .radial-row {
     display: flex;
@@ -55,6 +63,7 @@ legend {
     text-align: right;
 }
 
+
 @media ONLY screen and (max-width: 600px){
     .form-row, .radial-row {
         flex-direction: column;
@@ -67,4 +76,9 @@ legend {
     .form-spacer {
         text-align: left;
     }
+
+    .form-row input:not([type="submit"]){
+        width: 97%;
+    }
+
 }
