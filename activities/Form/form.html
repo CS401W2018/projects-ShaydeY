@@ -11,7 +11,7 @@
         <h1>Web design: Forms</h1>
     </head>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
                 <div class="form-row">
@@ -27,6 +27,11 @@
                 <div class="form-row">
                     <label for="pass">Password:</label>
                     <input type="password" name="password" id="pass">
+                </div>
+
+                <div class="form-row">
+                    <label for="pass">Age:</label>
+                    <input type="number" name="age" id="age">
                 </div>
 
                 <div class="form-row">
@@ -65,20 +70,42 @@
         </form>
 
         <h2>QnA:</h2>
-        <h3>The form tag has an "action" attribute. What does it do?</h3>
-        <p></p>
-        <h3>The form tag has a "method" attribute. What does it do?</h3>
-        <p>There are 2 options; Post and Get. Determines how the data is stored and travels.</p>
-        <h3>What is the difference between a "POST" and a "GET"?</h3>
-        <p>In a "GET" request the data travels as part of the URL; for reading information. In a "POST" request the data will change your state; does not disply in URL.</p>
-        <h3>What are different ways to style your form?</h3>
-        <p>Float, CSS Grid, and CSS Flex</p>
-        <h3>Why does the professor like to use flex?</h3>
-        <p>Because Flex works with responsive pages</p>
-
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is one of the most popular programing languages. Was invented in the late 1900s/early 2000s; The company wanted to market themselves as The Web Company so kind of tied it to the other programing language Java.</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>Running on the browser (In the DOM; front-end) or Node.js </p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>jQuery</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>React.js</p>
+        
     </main>
     <footer>
         <p>&copy;2025 Shayde Yamagata</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event){
+            event.preventDefault();
+            alert('Form Submitted');
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            
+            if (!fullname){
+                alert('You need to enter your name.');
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass
+            };
+
+            console.log(formData);
+
+        });
+    </script>
 </body>
 </html>
