@@ -78,39 +78,17 @@
         <p>jQuery</p>
         <h3>What is the most popular front-end js library today?</h3>
         <p>React.js</p>
+
+        <h2>QnA 3/28</h2>
+        <h3>What is AJAX?</h3>
+        <p>AJAX is JavaScript that allows us to dynamically update our pages without having to refresh the whole page with new HTML. </p>
+        <h3>Why do you put your JS Code in a separate file?</h3>
+        <p>To keep the HTML seperate from the coding; It will help the page load faster; Keep things more organized</p>
         
     </main>
     <footer>
         <p>&copy;2025 Shayde Yamagata</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function(event){
-            event.preventDefault();
-            alert('Form Submitted');
-
-            const fullname = document.getElementById('fullname').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('pass').value;
-
-            if(age || age<18){
-                alert('You need to be 18.')
-                return;
-            }
-            
-            if (!fullname){
-                alert('You need to enter your name.');
-                return;
-            }
-
-            const formData = {
-                fullname: fullname,
-                email: email,
-                password: pass
-            };
-
-            console.log(formData);
-
-        });
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
