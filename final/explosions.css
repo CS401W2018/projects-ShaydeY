@@ -1,3 +1,4 @@
+/*main layout for all pages*/
 body{
     font-family: sans-serif;
     background-color: #353531;
@@ -8,7 +9,7 @@ header{
 align-items: center;
 }
 
-nav a{
+a{
     color: #EC4E20;
     
 }
@@ -28,4 +29,114 @@ nav a{
 .current{
     color: #FF9505;
     font-style:italic
+}
+
+/*css for form from here*/
+fieldset {
+    background-color: #353531;
+    
+}
+
+legend {
+    background-color: #353531;
+    padding: 10px;
+    border: solid thin #EC4E20;
+}
+
+.form-row input:not([type= "submit"]) {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+    width: 40%;
+}
+
+.form-row input:is([type = "date"]){
+    width: auto;
+}
+
+.form-row input:not([type= "submit"]):focus {
+    background-color: white;
+}
+
+.form-row input[type= "submit"]{
+    padding: 10px;
+    background-color: #EC4E20;
+}
+
+.form-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+
+.radial-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align:right;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+/*css for data table*/
+.schedule {
+    /*border: 2px solid black;*/
+    box-shadow: 3px 3px 3px rgba(30, 30, 30, 0.5);
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+
+.schedule th, .schedule td {
+    border: thin solid black;
+    padding: 3px 5px 3px 5px;
+    vertical-align: middle;
+    border-bottom: solid thin black;
+}
+
+.schedule thead{
+    background-color: #EC4E20;
+}
+
+.schedule tfoot{
+    background-color: #EC4E20;
+}
+
+.schedule tbody tr:nth-child(odd){
+    background-color: gray;
+}
+
+#WhiteSpace {
+    color: #EC4E20;
+}
+
+/*responsiveness*/
+@media ONLY screen and (max-width: 600px){
+    .form-row, .radial-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+        width: auto;
+    }
+
+    .form-spacer {
+        text-align: left;
+        width: auto;
+    }
+
+    .form-row input:not([type="submit"]){
+        width: 97%;
+    }
+
 }

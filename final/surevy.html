@@ -18,7 +18,68 @@
         <a href="surevy.html" class="current">SURVEY</a>
     </nav>
     <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptates fuga vitae dignissimos earum illo, veritatis amet tempore tempora sunt maiores iure odio natus quia illum rerum a id numquam! INTRO TO SURVEY</p>
+        <div id="message"></div>
+        <form action="processing.html" method="get" id="formProcess">
+            <fieldset>
+                <legend>General Knowledge Survey:</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div>
 
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-row">
+                    <label for="education">Highest Level of Education:</label>
+                    <select name="education" id="education">
+                        <option value="blank"> </option>
+                        <option value="primary">Primary</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="upper">Upper &lpar;Highschool&rpar;</option>
+                        <option value="undergrad">Undergrad</option>
+                        <option value="graduates">Graduates</option>
+                        <option value="doctorates">Doctorates</option>
+                    </select>
+                </div>
+
+                <div class="radial-row">
+                    <div class="form-spacer" id="intrest">How interested are you in explosives?</div>
+                    <label><input type="radio" name="interest" value="none">Little to no interest</label>
+                    <label><input type="radio" name="interest" value="some">Some interest</label>
+                    <label><input type="radio" name="interest" value="have">I am interested</label>
+                    <label><input type="radio" name="interest" value="very">I love explosives</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="opinion1">How do you feel about current useage of explosives?:</label>
+                    <textarea name="opinion1" id="opinion1"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="opinion2">Whats a question you have about explosives? &lpar;if none put n/a&rpar;:</label>
+                    <textarea name="opinion2" id="opinion2"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="opinion3">How can we improve our site? &lpar;if none put n/a&rpar;:</label>
+                    <textarea name="opinion3" id="opinion3"></textarea>
+                </div>
+
+                <div class="radial-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Check to recieve email of your responses.</label>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy; 2025 Shayde Yamagata</p>
