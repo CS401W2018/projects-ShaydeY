@@ -5,22 +5,22 @@ body{
     color: #FFFFFF;
 }
 
-header{
-align-items: center;
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    color: #EC4E20;
+    text-decoration: none;
+    font-size: larger;
 }
 
 a{
     color: #EC4E20;
-    
 }
-
-
-
-
-
-
-
-
 
 .fancy{
     font-style: italic;
@@ -30,6 +30,37 @@ a{
     color: #FF9505;
     font-style:italic
 }
+
+.intro{
+    display: flex;
+}
+
+.intro p{
+    width: 50%;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.card p{
+    padding-left: 10px;
+}
+
+.card h3 {
+    padding-left: 10px;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.frame{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 
 /*css for form from here*/
 fieldset {
@@ -121,6 +152,19 @@ legend {
 
 /*responsiveness*/
 @media ONLY screen and (max-width: 600px){
+
+    /*main responive code*/
+    nav{
+        
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /*responsive for form*/
     .form-row, .radial-row {
         flex-direction: column;
     }
