@@ -5,7 +5,6 @@ document.getElementById('formProcess').addEventListener('submit', function(event
     const fullname = document.getElementById('fullname').value;
     const email = document.getElementById('email').value;
     const edu = document.getElementById('education').value;
-    const interest = document.getElementsById('interest').value;
     const q1 = document.getElementById('opinion1').value;
     const q2 = document.getElementById('opinion2').value;
     const q3 = document.getElementById('opinion3').value;
@@ -25,7 +24,6 @@ document.getElementById('formProcess').addEventListener('submit', function(event
         fullname: fullname,
         email: email,
         education: edu,
-        interest: interest,
         question1: q1,
         question2: q2,
         question3: q3,
