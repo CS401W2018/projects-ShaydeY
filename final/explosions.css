@@ -5,6 +5,10 @@ body{
     color: #FFFFFF;
 }
 
+body p{
+    margin-left: 2%;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -22,6 +26,7 @@ a{
     color: #EC4E20;
 }
 
+
 .fancy{
     font-style: italic;
 }
@@ -33,25 +38,36 @@ a{
 
 .intro{
     display: flex;
+    margin-bottom: 5%;
 }
 
 .intro p{
     width: 50%;
+    margin-right: 5%;
+}
+
+#intro{
+    justify-content: center;
+    margin: 2%;
+}
+
+#intro p{
+    width: 30%;
 }
 
 .cards img{
     width: 100%;
 }
 
-.card p{
+.cards p{
     padding-left: 10px;
 }
 
-.card h3 {
+.cards h3 {
     padding-left: 10px;
 }
 
-.card figure {
+.cards figure {
     margin: 0;
 }
 
@@ -59,6 +75,7 @@ a{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    margin: 2%;
 }
 
 
@@ -151,11 +168,15 @@ legend {
 }
 
 /*responsiveness*/
-@media ONLY screen and (max-width: 600px){
+@media ONLY screen and (max-width: 750px){
 
     /*main responive code*/
     nav{
-        
+        display: block;
+    }
+
+    nav a{
+        border-bottom: solid thin #FFFFFF;
     }
 
     .cards {
